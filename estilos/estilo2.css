@@ -1,0 +1,152 @@
+@media screen and (width>=400px) {
+    /*pantalla ancha*/
+    body{
+        background-color: yellow;
+    }
+    .contenedor{
+        background-color: brown;
+        display: grid;
+        grid-gap: 5px;
+        padding: 5px;
+        grid-template-columns: 2fr 2fr 1fr;
+        grid-template-rows: 1fr 1fr 5fr 1fr;
+        grid-template-areas: "titulo    titulo    titulo"
+                             "menu1     menu2     menu2"
+                             "contenido contenido ads"
+                             "footer    footer    footer";
+    }
+    .titulo{
+        background-color: bisque;
+        grid-area: titulo;
+    }
+    .menu1{
+        background-color: bisque;
+        grid-area: menu1;
+    }
+    .menu2{
+        background-color: bisque;
+        grid-area: menu2;
+    }
+    .contenido{
+        background-color: bisque;
+        grid-area: contenido;
+    }
+    .ads{
+        background-color: bisque;
+        grid-area: ads;
+    }
+    .footer{
+        background-color: bisque;
+        grid-area: footer;
+    }
+    .publi{
+        width: 100px;
+    }
+    .imgcont{
+        width: 250px;
+    }
+}
+
+@media screen and (width<400px) {
+    /*pantalla celular*/
+    body{
+        background-color: green;
+    }
+
+    .contenedor{
+        background-color: aqua;
+        display: grid;
+        grid-gap: 5px;
+        padding: 5px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
+        grid-template-areas: "titulo    titulo"
+                             "menu1     menu2"
+                             "contenido contenido "
+                             "ads       ads"
+                             "footer    footer";
+    }
+    .titulo{
+        background-color: bisque;
+        grid-area: titulo;
+    }
+    .menu1{
+        background-color: bisque;
+        grid-area: menu1;
+    }
+    .menu2{
+        background-color: bisque;
+        grid-area: menu2;
+    }
+    .contenido{
+        background-color: bisque;
+        grid-area: contenido;
+    }
+    .ads{
+        background-color: bisque;
+        grid-area: ads;
+    }
+    .footer{
+        background-color: bisque;
+        grid-area: footer;
+    }
+    .publi{
+        width: 75px;
+    }
+    .imgcont{
+        width: 250px;
+    }
+}
+
+
+@media screen and (width<300px) {
+    /*pantalla celular*/
+    body{
+        background-color: red;
+    }
+
+    .contenedor{
+        background-color: goldenrod;
+        display: grid;
+        grid-gap: 5px;
+        padding: 5px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 5fr 1fr 1fr;
+        grid-template-areas: "titulo"
+                             "menu1"     
+                             "menu2"
+                             "contenido"
+                             "ads"
+                             "footer";
+    }
+    .titulo{
+        background-color: bisque;
+        grid-area: titulo;
+    }
+    .menu1{
+        background-color: bisque;
+        grid-area: menu1;
+    }
+    .menu2{
+        background-color: bisque;
+        grid-area: menu2;
+    }
+    .contenido{
+        background-color: bisque;
+        grid-area: contenido;
+    }
+    .ads{
+        background-color: bisque;
+        grid-area: ads;
+    }
+    .footer{
+        background-color: bisque;
+        grid-area: footer;
+    }
+    .publi{
+        width: 100px;
+    }
+    .imgcont{
+        width: 150px;
+    }
+}
